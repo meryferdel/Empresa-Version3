@@ -1,0 +1,160 @@
+/* ===== Estilos de la aplicación =====
+   Cada bloque corresponde a una parte de la página.
+   Los nombres (.cabecera, .tabla, .boton...) son las clases que usan las JSP. */
+
+/* Toda la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #222222;
+}
+
+/* Barra azul de arriba */
+.cabecera {
+    background-color: #0b2a4a;
+    padding: 15px 25px;
+}
+
+.marca {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contenido: centrado y con ancho máximo */
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.subtitulo,
+.nota {
+    color: #666666;
+}
+
+/* Pie de página */
+.pie {
+    text-align: center;
+    padding: 15px;
+    color: #666666;
+}
+
+/* Menú: tarjetas una al lado de otra */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 250px;
+    margin: 0 15px 15px 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: #222222;
+    text-decoration: none;
+}
+
+.numero,
+.titulo-tarjeta,
+.texto-tarjeta {
+    display: block;
+}
+
+.titulo-tarjeta {
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+/* Tablas */
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #cccccc;
+}
+
+.tabla th {
+    background-color: #0b2a4a;
+    color: white;
+}
+
+.tabla .numerico {
+    text-align: right;
+}
+
+/* Formularios */
+.formulario {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botones (también los enlaces con class="boton") */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1565c0;
+    border: 2px solid #1565c0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton.secundario {
+    color: #1565c0;
+    background-color: white;
+}
+
+.boton.pequeno {
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+.acciones {
+    margin-top: 20px;
+}
+
+/* Mensajes: error (rojo), correcto (verde) e información (azul) */
+.alerta {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid;
+}
+
+.alerta.error { color: #b3261e; background-color: #fdeceb; }
+.alerta.ok    { color: #1b7f3b; background-color: #e6f5ea; }
+.alerta.info  { color: #0b2a4a; background-color: #e3f0fd; }
